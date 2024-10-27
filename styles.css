@@ -1,64 +1,58 @@
-
-/* Spam accent color */
-body.spam {
-    --accent-color: #ff0000; /* Neon red */
-}
-
 body {
+    font-family: Arial, sans-serif;
     background-color: #000000;
-    color: var(--accent-color);
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    display: flex;
-    flex-direction: column; /* Allow stacking of elements */
-    align-items: center; /* Center horizontally */
-    padding: 20px;
+    padding: 0;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 50%;
+    margin: 50px auto;
+    background: #000000;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+form {
     display: flex;
-    flex-direction: column; /* Stack child elements */
-    align-items: center; /* Center child elements */
+    flex-direction: column;
+    gap: 20px;
 }
 
 textarea {
     width: 100%;
-    height: 100px;
-    background-color: #000000; /* Black background */
-    color: var(--accent-color); /* Neon text */
-    border: 1px solid var(--accent-color); /* Neon border */
+    height: 200px;
     padding: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px var(--accent-color); /* Neon glow effect */
-    resize: none; /* Disable resizing */
-    font-size: 16px; /* Set font size for better readability */
-    font-family: 'Arial', sans-serif; /* Ensure consistent font */
-}
-
-textarea:focus {
-    outline: none; /* Remove default focus outline */
-    box-shadow: 0 0 15px var(--accent-color); /* Enhanced glow on focus */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 button {
-    width: 100%; /* Button width adjusted to match textarea */
-    padding: 10px;
-    justify-content: center;
-    background-color: #000000;
-    color: var(--accent-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #b72323;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 button:hover {
-    box-shadow: 0 0 20px var(--accent-color);
+    background-color: #0056b3;
 }
 
 .result {
-    margin-top: 20px;
-    padding: 15px;
-    width: 100%;
     text-align: center;
-    border: 1px solid var(--accent-color);
-    box-shadow: 0 0 10px var(--accent-color);
+    margin-top: 20px;
+}
+
+.result h2 {
+    color: #00ff91;
 }
